@@ -1,0 +1,31 @@
+.list-group {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.container.list-group-item {
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+}
+
+.title {
+    position: absolute;
+    left: 90px;
+    bottom: 0;
+}
+
+.title>a {
+    text-decoration: none;
+}
+
+.image-container>img {
+    height: 120px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}

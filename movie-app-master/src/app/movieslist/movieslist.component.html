@@ -1,0 +1,15 @@
+<main class="container">
+  <input type="text" #searchInput class="form-control mt-10" (keyup.enter)="search(searchInput.value)" placeholder="Please enter movie">
+  <div class="list-group">
+    <div *ngFor="let movie of movies" class="container list-group-item">
+      <div class="image-container">
+        <img [src]="movie.Poster" alt="Poster">
+      </div>
+      <div class="title">
+        <a [routerLink]="['/movie', movie.imdbID]">
+          {{ movie.Title }} ({{movie.Year}})
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
